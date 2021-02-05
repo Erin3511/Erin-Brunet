@@ -1,0 +1,221 @@
+/***** BASE STYLES *****/
+
+body{
+    color: #095256;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover, a:focus, a:active {
+     color: inherit;
+     text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    float: left;
+    padding: 0 10px 0 0;
+  }
+
+.right {
+    float: right;
+    padding: 0 10px 0 0;
+  }
+
+/***** GRID *****/
+
+.full-width {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.half-width {
+    float: left;
+    width: 600px;
+}
+
+.third-width {
+    float: left;
+    width: 400px;
+}
+
+/***** HEADER *****/
+
+header {
+    background: url('../img/hero-image.png');
+    background-size: cover;
+    height: 800px;
+}
+
+.logo {
+    background: url("/path") no-repeat;
+    display: block;
+    text-indent: -9999px;
+    width: 225px;
+}
+
+header h1 {
+    clear: both;
+    color: #bdbf09;
+    font-size: 60px;
+    font-weight: bold;
+    margin:auto;
+    padding-top: 150px;
+    text-align: center;
+}
+
+nav {
+    float: right;
+    padding: 75px 50px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #095256;
+    font-size: 24px;
+    padding-left: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header h2 {
+    clear: both;
+    font-weight: 100;
+    font-size: 48px;
+    padding-left: 100px;
+    text-align: center;
+    width: 1000px;
+}
+
+
+/***** WORK *****/
+
+#work{
+    background-color: #fafafa;
+    padding-bottom: 150px
+}
+
+#work .full-width {
+    padding: 20px 0px 20px 0px;
+}
+
+#work h3 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#work h4, h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#work h5 {
+    font-style: italic;
+}
+
+#work p {
+    font-size: 24px;
+    line-height: 40px;
+    margin: auto;
+}
+
+/***** About *****/
+
+#about{
+    background-color: #087e8b;
+    color: #ffffff;
+}
+
+#about .full-width {
+    padding: 25px 0px 25px 0px;
+}
+
+#about img {
+    height:285px;
+    padding: 10px 20px;
+    width: 515px;
+}
+
+#about h3 {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+#about h4 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+#about p {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 30px;
+    padding: 0px 20px;
+    text-align: left;
+}
+
+/***** CONTACT *****/
+
+#contact{
+    background-color: #095156;
+    color: #ffffff;
+    text-align: center;
+}
+
+#contact .full-width {
+    padding: 50px 0;
+}
+
+#contact h3 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+#contact h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#contact p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#contact #envelope {
+    padding-left: 40px;
+}
+
+#contact #email-header p {
+    padding-top: 20px
+}
+
+#contact a {
+    font-size: 24px;
+    font-weight:100;
+    text-decoration: none;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+     display: inline-block;
+     margin: 0px 40px;
+     text-align: left;
+}
+
+/********************* EB First Draft completed on 1/22/21 Barcelona, Spain *********************/
