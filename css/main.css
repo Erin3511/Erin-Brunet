@@ -1,11 +1,3 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -17,35 +9,23 @@ html {
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #bdbf09;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #bdbf09;
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
 
 hr {
-  display: block;
-  height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
+  display: block;
+  height: 1px;
   margin: 1em 0;
   padding: 0;
 }
@@ -84,7 +64,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Custom styles
    ========================================================================== */
 
 /* General Styles */
@@ -93,11 +73,10 @@ html {
 }
 
 body {
-  font-size: 1em;
-  font-family: 'Roboto', sans-serif;
-  color: #095256;
   background-color: white;
-  /* Sometimes the default background for a browser isn't exactly white. Adding a default allows more consistency between browsers. */
+  color: #095256;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
 }
 
 ul,
@@ -124,9 +103,9 @@ h2 {
   color: #095256;
   font-family: 'Roboto', serif;
   font-size: 1.25rem;
+  font-weight: 400;
   line-height: 1.5;
   width: 100%;
-  font-weight: 400;
 }
 
 h3 {
@@ -145,12 +124,10 @@ h5 {
 .project-link,
 .language-wrapper p,
 .tool-wrapper p {
-  text-transform: uppercase;
-  font-size: 1.125rem;
   color: #095256;
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
-
-
 
 .about-info h4,
 .contact-title {
@@ -197,9 +174,9 @@ h2,
 #about,
 footer {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   text-align: center;
-  flex-flow: row wrap;
 }
 
 .content-wrapper {
@@ -212,22 +189,16 @@ footer {
   text-align: left;
 }
 
-/* set the margins & paddings for each section - these are only a suggestion :) */
-/* setting all margins to zero removes all browser added default margins */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
-
+h6,
 p {
   margin: 0;
 }
 
-/* then can set the margin & paddings for any element */
 header {
   padding: 15px 0;
 }
@@ -245,8 +216,8 @@ nav {
 }
 
 #about {
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 footer {
@@ -308,25 +279,26 @@ figure {
 /* -------------------- Base Header Styles -------------------- */
 
 header {
-  background-color: #96b4af;
   align-items: center;
+  background-color: #96b4af;
 }
 
 header nav {
-  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
   font-size: 1.125em;
   font-weight: bold;
-  text-transform: uppercase;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 header nav ul {
-  width: 100%;
+
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 header nav ul li {
@@ -336,36 +308,33 @@ header nav ul li {
 
 nav #contact-link {
   background-color: #bdbf09;
-  padding: 10px 10px;
   border-radius: 30px;
+  padding: 10px 10px;
 }
 
 
 header .content-wrapper {
-  margin: 0;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
 }
 
 header figure {
-  width: 60%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
 }
 
 .header-divider {
   background: #bdbf09;
   height: 1px;
-  width: 100%;
   margin: 10px 0 20px 0;
+  width: 100%;
 }
-
-
-
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -373,12 +342,12 @@ header figure {
 
 .hero-area {
 background-image: url('../img/hero-image.png');
-background-size: cover;
 background-position: top;
-min-height: 500px;
+background-size: cover;
 display: flex;
-justify-content: center;
+min-height: 500px;
 flex-flow: row wrap;
+justify-content: center;
 margin: 0px;
 padding: 0px;
 }
@@ -399,18 +368,18 @@ padding: 0px;
 }
 
 .portfolio-wrapper {
-  display: flex;
-  justify-content: center;
   align-items: flex-start;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .home-portfolio-piece {
-  width: 100%;
+  align-items: center;
+  flex-direction: column;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
 .home-portfolio-piece h4 {
@@ -418,15 +387,15 @@ padding: 0px;
 }
 
 .home-portfolio-piece figure {
-  width: 100%;
   filter: drop-shadow(1px 2px 6px lightgrey);
+  width: 100%;
 }
 
 .project-link {
   background-color: #095256;
-  padding: .75rem 3.75rem;
   border-radius: 30px;
   color: #FFFFFF;
+  padding: .75rem 3.75rem;
 }
 
 .project-link:hover {
@@ -439,15 +408,15 @@ padding: 0px;
 }
 
 #skills h4 {
-  margin: 40px 0 40px 0;
   font-weight: bold;
+  margin: 40px 0 40px 0;
 }
 
 .language-wrapper p,
 .tool-wrapper p {
   background-color: #f8f980;
-  padding: 15px 0;
   margin: 20px 0;
+  padding: 15px 0;
 }
 
 .tool {
@@ -475,10 +444,10 @@ footer {
 }
 
 footer .contact-wrapper {
+  align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
 }
 
 footer .contact-info {
@@ -505,20 +474,17 @@ footer ul {
 }
 
 footer .social-icons li {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
 }
 
 footer .social-icons li i {
-  font-size: 1.875rem;
   color: #095256;
+  font-size: 1.875rem;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -648,13 +614,9 @@ footer .social-icons li i {
   }
 
   header .content-wrapper {
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
   }
-
-  /*nav {
-    margin: 0 0 80px 0;
-  }*/
 
   header figure {
     width: 30%;
@@ -669,8 +631,7 @@ footer .social-icons li i {
 .hero-area {
   min-height: 600px;
 }
-  
-  
+   
 .hero-area h1 {
   font-size: 3em;
   line-height: 1;
@@ -754,21 +715,6 @@ footer .social-icons li i {
     flex-flow: row wrap;
   }
 
- /* header nav {
-  
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-transform: uppercase;
-  }
-
-  header nav ul {
-    
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-  }
-*/
   .home-title {
     display: flex;
     flex-flow: row wrap;
@@ -796,15 +742,14 @@ footer .social-icons li i {
   .language-wrapper,
   .tool-wrapper {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
     flex-flow: row wrap;
+    justify-content: space-evenly;
     text-transform: uppercase;
+    width: 100%;
   }
 
   .skill,
   .tool {
-    /*  width: auto; */
     width: 45%;
   }
 
@@ -816,8 +761,8 @@ footer .social-icons li i {
   /* about */
   .about-content-wrapper {
     display: flex;
-    justify-content: center;
     flex-flow: row wrap;
+    justify-content: center;
   }
 
   #about figure {
@@ -839,16 +784,16 @@ footer .social-icons li i {
   }
 
   footer ul {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
   }
 
   footer .social-icons {
-    width: 12.5em;
     justify-content: space-between;
+    width: 12.5em;
   }
 
   footer .social-icons li i {
@@ -932,8 +877,8 @@ footer .social-icons li i {
   }
 
   #about {
-    padding-top: 80px;
     padding-bottom: 80px;
+    padding-top: 80px;
   }
 
   footer {
@@ -1005,9 +950,9 @@ footer .social-icons li i {
   nav ul li a:hover,
   nav #contact-link:hover {
     background-color: #bdbf09;
+    border-radius: 30px;
     color: #095256;
     padding: 10px 10px;
-    border-radius: 30px;
   }
 
   .home-title {
@@ -1050,8 +995,8 @@ footer .social-icons li i {
   }
 
   footer .social-icons {
-    width: 12.5em;
     justify-content: space-between;
+    width: 12.5em;
   }
 }
 
