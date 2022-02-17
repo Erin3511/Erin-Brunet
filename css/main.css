@@ -496,6 +496,13 @@ footer .social-icons li i {
     font-size: 1.875rem;
 }
 
+footer #siteseal {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 150px;
+}
+
 
 /* ==========================================================================
    Helper classes
